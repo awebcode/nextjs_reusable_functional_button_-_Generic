@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`container mx-auto w-full max-w-7xl  ${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
     </html>

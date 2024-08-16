@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently  \"bun run build\" \"bun run dev\"",
+    "dev": "nodemon build/index.js",
+    "production": "node build/index.js",
+    "build": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "concurrently": "^8.2.2",
+    "connect-mongo": "^5.1.0",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "nodemon": "^3.1.4"
+  }
+}
